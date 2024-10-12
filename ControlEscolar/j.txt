@@ -1,0 +1,32 @@
+ public void modificarFichero() {
+        try {
+           
+            if (registros.size() == 0) {
+                DetxtAObjeto();
+            }
+
+            int opc = 10;
+
+            while (opc != 9) {
+                opc = Integer.parseInt(JOptionPane.showInputDialog(null, "1-Modificar ID " + "\n" +
+         
+                    case 1:
+                        JOptionPane.showMessageDialog(null, "Actualizar el ID de viaje");
+
+                        String IDviajeviejo;
+                        IDviajeviejo = JOptionPane.showInputDialog(null, "Cual es el ID de viaje", "ID a modificar");
+                        String IDviajenuevo;
+                        IDviajenuevo = JOptionPane.showInputDialog(null, "Cual es el nuevo ID de viaje", "ID nuevo");
+
+                        for Alumno a : alumnoslist) {
+
+                            if (n.getID_viaje().equals(IDviajeviejo)) {
+
+                                n.setID_viaje(IDviajenuevo);
+                                JOptionPane.showMessageDialog(null,);
+                                break;
+                            } else {
+                                System.out.println("el producto no ha sido encontrado");
+                            }
+                        }
+                        break;

@@ -1,0 +1,21 @@
+public void borrar() {
+        String v;
+        v = JOptionPane.showInputDialog(null, "numero del ID de viaje para borrar su registro");
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(FicheroRegistro));
+            for (Registro n : registros) {
+                if (!Objects.equals(n.getID_viaje(), v)) {
+                    bw.write(n.getID_viaje() + "\t" + n.getID_Conductor() + "\t" + n.getNumpasajeros()
+                            + "\t" + n.getHorasalida() + "\t" + "\t" + n.getHorallegada() + "\t" + n.getTerminalsalida()
+                            + "\t" + n.getTerminalllegada() + "\r\n");
+                } else {
+                
+                }
+            }
+            bw.close();
+            registros.clear();
+            DetxtAObjeto();
+
+        } catch (Exception ex) {
+           
+        }
